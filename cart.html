@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+        }
+        .cart-container {
+            max-width: 700px;
+            margin: auto;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .cart-item img {
+            width: 120px;
+        }
+        .remove-btn {
+            padding: 8px 12px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .checkout-btn {
+            margin-top: 25px;
+            padding: 15px;
+            width: 100%;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Your Cart</h1>
+
+    <div class="cart-container" id="cartContainer"></div>
+
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+
+<script src="cart.js"></script>
+</body>
+</html>
